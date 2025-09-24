@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn_entradas = document.getElementById("btn_entradas");
 
   btn_entradas.addEventListener("click", () => {
-    window.document.open("entradas.html");
+    window.location.href = "entradas.html";
   })
 });
