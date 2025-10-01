@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+/* Variables CSS */
+:root {
+  --main-color: #004aad;
+  --main-buttton-color: rgb(0, 0, 189);
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -31,7 +37,7 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 15px;
-  background-color: #004aad;
+  background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +60,7 @@ header nav ul li a {
 
 /* Eventos */
   
-.event{
+.hero-section{
     background-image: url("/assets/img/fondo principal.jpg");
     background-repeat: none;
     background-position: center;
@@ -62,7 +68,7 @@ header nav ul li a {
     height: 70vh;
 }
 
-.efect{
+.effect{
     max-width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
@@ -74,27 +80,36 @@ header nav ul li a {
     padding-top: 50px;
 }
 
+.descuento {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .descuento h1{
   font-size: 60px;
 }
 
-.buy_entradas{
-    margin-top: 15px;
+.button{
     padding: 15px 25px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
-    background-color: rgb(0, 0, 189);
+    font-size: 17px;
+    background-color: var(--main-buttton-color);
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
-.buy_entradas:hover{
-    background-color: rgba(0, 0, 189, 0.493);
+.button:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    transition: all 0.3s;
 }
 
 .datos{
-  background-color: #004aadc1;
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   border-radius: 30px;
@@ -108,4 +123,28 @@ header nav ul li a {
 
 .datos h2:last-child{
   border: none;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .effect {
+    gap: 200px;
+  }
+}
+
+@media (max-width: 960px) {
+  .effect {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero-section {
+    height: 100vh;
+  }
+  .effect {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
