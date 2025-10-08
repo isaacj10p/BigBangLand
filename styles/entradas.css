@@ -11,6 +11,7 @@
 
 body {
   font-family: "Bebas Neue", sans-serif;
+  margin: 100px;
 }
 
 /* Header */
@@ -66,7 +67,13 @@ main{
   color: #fff;
   border-radius: 50px;
   font-size: 30px;
+  transition: all 0.5s;
   cursor: pointer;
+}
+
+#Choosed_Park:hover{
+  background-color: #0060dd;
+  scale: 1.05;
 }
 
 .selector{
@@ -82,8 +89,88 @@ main{
 .item{
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.item:hover{
+  scale: 1.05;
 }
 
 .selector .choosed{
   color: blue;
+}
+
+/* Entradas */
+
+.todas_entradas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.entradas{
+  display: flex; 
+  align-items: center;
+  gap: 30px;
+}
+
+.entrada{
+  height: 400px;
+  width: 300px;
+  padding: 30px;
+  box-shadow: 0 0 20px #b9cfff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entrada h1{
+  font-size: 30px;
+}
+
+.prices{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.person h5{
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.entrada button{
+  margin-top: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  background-color: #004aad;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.entrada button:hover{
+  background-color: #0060dd;
+  scale: 1.05;
+}
+
+.colaps{
+  padding: 20px 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #0060dd;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.colaps:hover{
+  scale: 1.05;
+  background-color: #004aad;
 }
