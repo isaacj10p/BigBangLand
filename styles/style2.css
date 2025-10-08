@@ -142,6 +142,7 @@ header nav ul li a {
 /* Sección condiciones y beneficios */
 .beneficios-condiciones {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +176,7 @@ header nav ul li a {
 .benefits-choiced {
   display: none;
   margin-top: 40px;
-  width: 80%;
+  width: 70%;
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
@@ -191,6 +192,23 @@ header nav ul li a {
 
 .conditions-choiced li {
   list-style: disc;
+}
+
+.benefits-choiced ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.benefits-choiced {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.benefits-choiced i {
+  color: green;
 }
 
 #condiciones:checked ~ .conditions-choiced {
