@@ -12,6 +12,8 @@
   --main-buttton-color: rgb(0, 0, 189);
   --clear-gray: rgb(202, 202, 202);
   --yellow: yellow;
+  --text-gray: rgb(209, 209, 209);
+  --title-gray: rgb(172, 172, 172);
 }
 
 /* Reset básico */
@@ -61,6 +63,30 @@ header nav ul li a {
 
 .header-link-marked {
   color: var(--yellow);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-color);
+  padding: 45px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section span {
+  color: var(--title-gray);
+}
+
+.footer-section a {
+  color: var(--text-gray);
 }
 
 /* Hero section */
@@ -142,7 +168,7 @@ header nav ul li a {
 /* Sección condiciones y beneficios */
 .beneficios-condiciones {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
