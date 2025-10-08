@@ -5,11 +5,11 @@ const benefitsList = document.querySelector('.benefits-choiced');
 
 function updateVisibility() {
   if (condicionesRadio.checked) {
-    conditionsList.style.display = 'block';
+    conditionsList.style.display = 'flex';
     benefitsList.style.display = 'none';
   } else if (beneficiosRadio.checked) {
     conditionsList.style.display = 'none';
-    benefitsList.style.display = 'block';
+    benefitsList.style.display = 'flex';
   }
 }
 

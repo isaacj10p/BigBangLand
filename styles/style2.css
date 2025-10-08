@@ -11,6 +11,7 @@
   --main-color: #004aad;
   --main-buttton-color: rgb(0, 0, 189);
   --clear-gray: rgb(202, 202, 202);
+  --yellow: yellow;
 }
 
 /* Reset básico */
@@ -26,6 +27,8 @@
 .header-logo {
   width: 150px;
 }
+
+/* Clases reutilizables */
 
 /* Header */
 header {
@@ -54,6 +57,10 @@ header nav ul {
 header nav ul li a {
   color: #fff;
   font-size: 24px;
+}
+
+.header-link-marked {
+  color: var(--yellow);
 }
 
 /* Hero section */
@@ -167,6 +174,23 @@ header nav ul li a {
 .conditions-choiced,
 .benefits-choiced {
   display: none;
+  margin-top: 40px;
+  width: 80%;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.conditions-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conditions-choiced li {
+  list-style: disc;
 }
 
 #condiciones:checked ~ .conditions-choiced {
@@ -233,5 +257,19 @@ header nav ul li a {
 @media (max-height: 850px) and (max-width: 370px) {
   .descuento {
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 620px) {
+  .beneficios-condiciones .button-bar {
+    width: 80%;
+  }
+  .conditions-choiced,
+  .benefits-choiced {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0;
+    font-size: 16px;
   }
 }
