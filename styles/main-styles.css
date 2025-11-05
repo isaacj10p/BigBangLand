@@ -11,9 +11,9 @@
   --main-color: #004aad;
   --main-buttton-color: rgb(0, 0, 189);
   --clear-gray: rgb(202, 202, 202);
-  --yellow: yellow;
+  --yellow: #ffff00;
   --text-gray: rgb(209, 209, 209);
-  --title-gray: rgb(172, 172, 172);
+  --blue-gray: #8DA8CC;
 }
 
 /* Reset básico */
@@ -82,7 +82,7 @@ footer {
 }
 
 .footer-section span {
-  color: var(--title-gray);
+  color: var(--blue-gray);
 }
 
 .footer-section a {
