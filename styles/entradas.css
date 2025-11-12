@@ -11,35 +11,22 @@
 
 body {
   font-family: "Bebas Neue", sans-serif;
+  margin-top: 100px;
+  background-image: url("../assets/img/fondo-entradas.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: center;
+  animation: moverFondo 2000s linear infinite;
 }
 
-/* Header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 15px;
-  background-color: #004aad;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 25px;
-}
-
-header nav ul {
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  color: #fff;
-  font-size: 16px;
+@keyframes moverFondo {
+  from{
+    background-position: 0 0;
+  }
+  to{
+    background-position: -30000px -10000px;
+  }
 }
 
 /* Main */
@@ -57,33 +44,205 @@ main{
   align-items: center;
 }
 
+.parks h1, .todas_entradas h2{
+  background-color: #fff;
+  color: #000;
+  border: 3px solid #004aad;
+  box-shadow: 0 0 10px #0060dd;
+  padding: 5px 10px;
+  border-radius: 40px;
+} 
+
 /* Eleccion parques */
 
+.box-selector{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #Choosed_Park{
+  width: 301px;
+  height: 60px;
   margin-top: 20px;
-  padding: 10px 100px;
+  padding: 10px;
   background-color: #004aad;
   color: #fff;
   border-radius: 50px;
   font-size: 30px;
+  transition: all 0.5s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Choosed_Park:hover{
+  background-color: #0060dd;
+  scale: 1.05;
 }
 
 .selector{
   display: none;
-  flex-direction: column;
   align-items: center;
-  gap: 5px;
-  background-color: rgb(183, 241, 230);
+  gap: 60px;
   margin-top: 10px;
-  border-radius: 15px;
 }
 
 .item{
-  font-size: 20px;
+  background-color: #5D73A2;
+  color: #fff;
+  border-radius: 15px;
+  width: 301px;
+  height: 56px;
+  font-size: 30px;
   cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:hover{
+  scale: 1.05;
 }
 
 .selector .choosed{
-  color: blue;
+  border: 3px solid #ffff00;  
+}
+
+/* Entradas */
+
+.todas_entradas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.entradas{
+  display: flex; 
+  align-items: center;
+  gap: 30px;
+}
+
+.entrada{
+  height: 400px;
+  width: 300px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #89aeff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entrada h1{
+  font-size: 30px;
+}
+
+.prices{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.price h2{
+  box-shadow: none;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+.person h5{
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.entrada button{
+  margin-top: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 17px;
+  background-color: #004aad;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.entrada button:hover{
+  background-color: #0060dd;
+  scale: 1.05;
+}
+
+.colaps{
+  padding: 20px 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #0060dd;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.colaps:hover{
+  scale: 1.05;
+  background-color: #004aad;
+}
+
+/* Footer */
+
+footer{
+  background-color: #004aad;
+  padding: 50px 50px 25px 25px;
+  margin-top: 50px;
+}
+
+.horizontal{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+footer .section h1{
+  color: #c8c8c8;
+  font-size: 15px;
+}
+
+footer .section h1:nth-child(1){
+  color: #8da8cc;
+  font-size: 20px;
+}
+
+.social_list{
+  margin-block: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social{
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+.social-logo{
+  height: 20px;
+}
+
+.social h2{
+  font-size: 15px;
+}
+
+.copyright h2{
+  margin-top: 30px;
+  color: #8DA8CC;
+  font-size: 14px;
 }
