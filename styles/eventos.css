@@ -1,0 +1,18 @@
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    padding: 0.5em;
+}
+
+#contorno{
+    background-color: #0060DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3em;
+    font-size: 3em;
+    color: white;
+    border-radius: 100px;
+}
