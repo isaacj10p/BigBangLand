@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn_entradas = document.getElementById("btn_entradas");
 
   btn_entradas.addEventListener("click", () => {
-    window.document.open("entradas.html");
+    window.location.href = "entradas.html";
   })
+
+  // Colapso entradas
+
+  function Colaps(days) {
+    const c = document.getElementById(`${days}_day`);
+    c.style.display = c.style.display === 'none' ? 'flex' : 'none';
+  }
+
 });
