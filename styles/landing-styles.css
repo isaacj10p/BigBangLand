@@ -1,6 +1,6 @@
 /* Sección condiciones y beneficios */
 .beneficios-condiciones {
-    margin: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,10 +153,26 @@
 
 /* Sección entradas */
 
-section .entradas-landing {
+.entradas-landing {
     display: flex;
-    margin: 50px;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("../assets/img/fondo-entradas.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
+    animation: moverFondo 2000s linear infinite;
 }
+
+@keyframes moverFondo {
+    from{
+      background-position: 0 0;
+    }
+    to{
+      background-position: -30000px -10000px;
+    }
+  }
 
 .entradas{
     display: flex; 
