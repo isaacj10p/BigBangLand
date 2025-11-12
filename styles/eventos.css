@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
 .title{
     display: flex;
     justify-content: center;
@@ -21,13 +23,48 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-
+    margin-top: 5em;
 }
 
 .evento{
-    margin-top: 5em;
-    display: flex;
     height: 30em;
     width: 20em;
-    background-color: red;
+    background-color: #EBEBEB;
+    border: 1px solid rgb(196, 196, 196);
+    text-align: center;
+}
+
+#portada{
+    height: 12em;
+    width: 20em;
+    object-fit: cover;
+}
+
+#event-title{
+    font-size: 30px;
+}
+
+#subtitle{
+    font-size: 25px;
+    color: blue;
+}
+
+.tiempo{
+    display: flex;
+    font-family: beiruti;
+    justify-content: center;
+    gap: 5px;
+}
+
+.info{
+    margin-top: 20px;
+    font-family: beiruti;
+    display: flex;
+    justify-content: center;
+}
+
+#descripcion{
+    display: flex;
+    font-size: 22px;
+    width: 14em;
 }
