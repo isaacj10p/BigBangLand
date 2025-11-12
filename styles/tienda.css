@@ -45,7 +45,7 @@ header nav ul li a {
   font-size: 16px;
 }
 
-.active a{
+.selected a{
   color: #FFFF00;
 }
 
@@ -87,6 +87,105 @@ main{
   border-radius: 53px;
   border: 5px solid #000;
 }
+
+.cartelera h1{
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: 30px;
+}
+
+.tienda{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 50px;
+}
+
+.ropa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ropa h1{
+  font-size: 80px;
+  color: #000;
+}
+
+.coleccion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.prenda{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 294px;
+  border-radius: 25px;
+  padding: 30px 0 10px 0;
+  background: #5d73a2;
+  box-shadow: 10px 10px 10px #89aeff;
+}
+
+.prenda h1{
+  font-size: 30px;
+  color: #fff;
+}
+
+.prenda img{
+  width: 270px;
+  height: 145px;
+  background: #ffffc5;
+}
+
+.prenda button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 270px;
+  border-radius: 25px;
+  padding: 10px;
+  background: #fff;
+  border: none;
+}
+
+.prenda button h2{
+  font-size: 35px;
+  color: #000;
+}
+
+.tallas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.tallas li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 40px;
+  width: 40px;
+  padding: 10px 0;
+  background: #fff;
+}
+
+.tallas li h2{
+  font-size: 35px;
+  color: #000;
+}
+
+
 
 /* Footer */
 
