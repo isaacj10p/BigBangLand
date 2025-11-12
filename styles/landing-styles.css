@@ -232,3 +232,38 @@
     background-color: #0060dd;
     scale: 1.05;
   }
+
+/* Sección textos */
+
+.textos-landing {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.contenedor-texto {
+    display: flex;
+    gap: 40px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    width: 50%;
+}
+
+.textos-titulo {
+    color: #004aad;
+    font-size: 36px;
+}
+
+.textos-texto {
+    color: #575757;
+    font-size: 26px;
+}
+
+.textos-imagen {
+    width: 50%;
+}
