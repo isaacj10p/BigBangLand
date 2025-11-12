@@ -1,0 +1,14 @@
+.horarios{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 5em;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
