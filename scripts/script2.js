@@ -22,12 +22,4 @@ document.addEventListener("DOMContentLoaded", () => {
   btn_entradas.addEventListener("click", () => {
     window.location.href = "entradas.html";
   })
-
-  // Colapso entradas
-
-  function Colaps(days) {
-    const c = document.getElementById(`${days}_day`);
-    c.style.display = c.style.display === 'none' ? 'flex' : 'none';
-  }
-
 });
