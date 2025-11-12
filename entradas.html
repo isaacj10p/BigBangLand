@@ -4,19 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/entradas.css" />
-  <link rel="stylesheet" href="styles/style2.css">
+  <link rel="stylesheet" href="styles/main-styles.css">
   <title>Entradas</title>
 </head>
 <body>
   <header>
-    <a href="index2.html"><img src="assets/logo/large_transparent.png" alt="Header Logo" class="header-logo"></a>
+    <a href="index.html"><img src="assets/logo/large_transparent.png" alt="Header Logo" class="header-logo"></a>
     <nav>
       <ul>
         <li><a href="index2.html">Inicio</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="horarios.html">Horarios</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
-        <li><a class="selected" href="">Entradas</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Horarios</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li class="but-entradas">
+          <img src="assets/img/cupon.png" alt="cupon" class="cupon-nav">
+          <a href="entradas.html">Entradas</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -24,18 +27,268 @@
   <main>
     <section class="parks">
       <h1>Choose your parks</h1>
-      <div>
+      <div class="box-selector">
         <p id="Choosed_Park">Via Lactea</p>
 
         <ul class="selector" id="Park_Selector">
           <li class="item">All parks</li>
           <li class="item choosed">Via Lactea</li>
           <li class="item">Andromeda</li>
-          <li class="item">Centaurus</li>
         </ul>
       </div>
     </section>
+
+    <section class="todas_entradas">
+      <h2>Entradas de 1 día</h2>
+
+      <div class="entradas">
+
+        <div class="entrada">
+          <h1>Via Lactea</h1>
+          <p>La entrada permite 1 día de acceso a Via Lactea</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>35 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>15 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+        <div class="entrada">
+          <h1>Andromeda</h1>
+          <p>La entrada permite 1 día de acceso a Andromeda</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>35 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>15 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+        <div class="entrada">
+          <h1>Andromeda & Via Lactea</h1>
+          <p>La entrada permite 1 día de acceso a todo el parque</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>70 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>30 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+        
+      </div>
+
+      <h2>Entradas de 2 días</h2>
+      
+      <div class="entradas">
+
+        <div class="entrada">
+          <h1>Via Lactea</h1>
+          <p>La entrada permite 2 días de acceso a Via Lactea</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>65 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>25 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+        <div class="entrada">
+          <h1>Andromeda</h1>
+          <p>La entrada permite 2 días de acceso a Andromeda</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>65 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>25 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+        <div class="entrada">
+          <h1>Andromeda & Via Lactea</h1>
+          <p>La entrada permite 2 días de acceso a todo el parque</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>130 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>50 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+      </div>
+
+      <h2>Entradas de 3 días</h2>
+
+      <div class="entradas">
+
+        <div class="entrada">
+          <h1>Via Lactea</h1>
+          <p>La entrada permite 3 días de acceso a Via Lactea</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>100 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>40 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+        <div class="entrada">
+          <h1>Andromeda</h1>
+          <p>La entrada permite 3 días de acceso a Andromeda</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>100 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>40 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+
+        <div class="entrada">
+          <h1>Andromeda & Via Lactea</h1>
+          <p>La entrada permite 3 días de acceso a todo el parque</p>
+
+          <div class="prices">
+            <div class="person"><h3>Adulto <h5>(11-59 años)</h5></h3></div>
+            <div class="price"><h2>200 €</h2></div>
+          </div>
+
+          <div class="prices">
+            <div class="person"><h3>Júnior/Sénior <h5>(4-10 años) / (+ de 59)</h5></h3></div>
+            <div class="price"><h2>80 €</h2></div>
+          </div>
+
+          <button>Comprar entradas</button>
+        </div>
+        
+      </div>
+
+    </section>
   </main>
+
+  <footer>
+    <div class="horizontal">
+      <div class="logo">
+        <img src="assets/logo/large_transparent.png" alt="Header Logo" class="header-logo">
+        <div class="social_list">
+          <div class="social">
+            <img src="assets/img/Ig.png" alt="Ig" class="social-logo">
+            <h2>@BIGBANG.LAND</h2>
+          </div>
+
+          <div class="social">
+            <img src="assets/img/Youtube.png" alt="Ig" class="social-logo">
+            <h2>BIGBANG LAND</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h1>SECTION TITLE</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+      </div>
+
+      <div class="section">
+        <h1>SECTION TITLE</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+      </div>
+
+      <div class="section">
+        <h1>SECTION TITLE</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+      </div>
+
+      <div class="section">
+        <h1>SECTION TITLE</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+      </div>
+
+      <div class="section">
+        <h1>SECTION TITLE</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+      </div>
+
+      <div class="section">
+        <h1>SECTION TITLE</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+        <h1>SECTION LINK</h1>
+      </div>
+    </div>
+    <div class="copyright">
+      <h2>BIG BANG LAND 2025 ©. Todos los derechos reservados</h2>
+    </div>
+    
+  </footer>
 
   <script src="scripts/script2.js"></script>
 </body>
