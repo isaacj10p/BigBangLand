@@ -66,6 +66,11 @@ header {
   align-items: center;
 }
 
+h1 {
+  color: var(--main-color);
+  font-size: 36px;
+}
+
 header h1 {
   color: #fff;
   font-size: 25px;

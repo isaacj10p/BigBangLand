@@ -238,12 +238,14 @@
 .textos-landing {
     display: flex;
     flex-direction: column;
-    padding: 50px 150px;
+    justify-content: center;
+    padding: 50px 0;
 }
 
 .contenedor-texto {
     display: flex;
     gap: 40px;
+    justify-content: center;
 }
 
 .texto {
@@ -251,19 +253,31 @@
     flex-direction: column;
     text-align: justify;
     justify-content: center;
-    width: 50%;
+    width: 35%;
 }
 
 .textos-titulo {
     color: #004aad;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .textos-texto {
     color: #575757;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .textos-imagen {
-    width: 50%;
+    width: 35%;
+}
+
+/* Donde nos ubicamos sección */
+
+.donde-ubicados-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    flex-direction: column;
+    background-color: #F3F3F3;
 }
