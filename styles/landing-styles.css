@@ -276,8 +276,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     padding: 50px;
     flex-direction: column;
     background-color: #F3F3F3;
+}
+
+.donde-ubicados-imagen {
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.349);
 }
