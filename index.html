@@ -276,5 +276,23 @@
                 <a href="#">Footer section link</a>
             </div>
     </footer>
+
+<script>
+    window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 10) {
+        header.classList.remove("transparent");
+    } else {
+        header.classList.add("transparent");
+    }
+});
+
+// Ejecutarlo al cargar
+window.addEventListener("load", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY <= 10) header.classList.add("transparent");
+});
+</script>
 </body>
 </html>
