@@ -36,6 +36,10 @@
   --blue-gray: #8DA8CC;
 }
 
+.white {
+  color: #fff;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -182,7 +186,6 @@ footer {
     font-size: 25px;
     background-color: var(--main-buttton-color);
     color: #fff;
-    font-family: ;
     cursor: pointer;
     transition: all 0.3s;
 }
