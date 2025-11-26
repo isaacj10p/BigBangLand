@@ -6,6 +6,25 @@
   font-style: normal;
 }
 
+.but-entradas{
+  background-color: #FFFF00;
+  border-radius: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.but-entradas a{
+  color: #000;
+  margin-block: 6px;
+}
+
+.cupon-nav{
+  height: 21px;
+  width: 21px;
+}
+
 /* Variables CSS */
 :root {
   --main-color: #004aad;
@@ -53,6 +72,7 @@ header h1 {
 
 header nav ul {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -65,20 +85,54 @@ header nav ul li a {
   color: var(--yellow);
 }
 
+.but-entradas{
+  background-color: #FFFF00;
+  border-radius: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.but-entradas a{
+  color: #000;
+  margin-block: 6px;
+}
+
+.cupon-nav{
+  height: 21px;
+  width: 21px;
+}
+
 /* Footer */
-footer {
+.sec-1 {
   display: flex;
   flex-direction: row;
   background-color: var(--main-color);
   padding: 45px 15px;
   display: flex;
+  margin-top: 50px;
   justify-content: space-around;
   align-items: start;
+}
+
+.sec-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-gray);
+  padding: 7px;
+}
+
+.sec-2 h2{
+  color: #4D5E82;
+  font-size: 17px;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .footer-section span {
@@ -87,6 +141,34 @@ footer {
 
 .footer-section a {
   color: var(--text-gray);
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social_list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social h2{
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-logo{
+  width: 23px;
 }
 
 /* Hero section */
@@ -137,7 +219,6 @@ footer {
     font-size: 25px;
     background-color: var(--main-buttton-color);
     color: #fff;
-    font-family: ;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -163,157 +244,4 @@ footer {
 
 .datos h2:last-child{
   border: none;
-}
-
-/* Sección condiciones y beneficios */
-.beneficios-condiciones {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.beneficios-condiciones .button-bar {
-  display: flex;
-  justify-content: center;
-  background-color: var(--clear-gray);
-  border-radius: 40px;
-  width: 600px;
-}
-
-.beneficios-condiciones .button-bar input[type="radio"] {
-  display: none;
-}
-
-.beneficios-condiciones .button-bar .button {
-  width: 100%;
-  border-radius: 40px;
-  background-color: var(--clear-gray);
-  color: black;
-}
-
-.beneficios-condiciones .button-bar input[type="radio"]:checked + label.button {
-  background-color: var(--main-buttton-color);
-  color: #fff;
-}
-
-.conditions-choiced,
-.benefits-choiced {
-  display: none;
-  margin-top: 40px;
-  width: 70%;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-  gap: 50px;
-  font-size: 20px;
-}
-
-.conditions-benefits-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.conditions-choiced li {
-  list-style: disc;
-}
-
-.benefits-choiced ul {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 10px;
-}
-
-.benefits-choiced {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-}
-
-.benefits-choiced i {
-  color: green;
-}
-
-#condiciones:checked ~ .conditions-choiced {
-  display: block;
-}
-
-#condiciones:checked ~ .benefits-choiced {
-  display: none;
-}
-
-#beneficios:checked ~ .conditions-choiced {
-  display: none;
-}
-
-#beneficios:checked ~ .benefits-choiced {
-  display: block;
-}
-
-/* Responsive */
-
-@media (max-width: 1200px) {
-  .effect {
-    gap: 200px;
-  }
-}
-
-@media (max-width: 960px) {
-  .effect {
-    gap: 100px;
-  }
-}
-
-@media (max-width: 850px) {
-  .hero-section {
-    height: 100vh;
-  }
-  .effect {
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-
-@media (max-width: 370px) {
-  .descuento h1 {
-    font-size: 40px;
-  }
-
-  .effect {
-    align-items: normal;
-    padding: 20px;
-  }
-}
-
-@media (max-height: 730px) {
-  .hero-section {
-    height: 100%;
-  }
-
-  .descuento {
-    margin-top: 40px;
-  }
-}
-
-@media (max-height: 850px) and (max-width: 370px) {
-  .descuento {
-    margin-top: 70px;
-  }
-}
-
-@media (max-width: 620px) {
-  .beneficios-condiciones .button-bar {
-    width: 80%;
-  }
-  .conditions-choiced,
-  .benefits-choiced {
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    gap: 0;
-    font-size: 16px;
-  }
 }
