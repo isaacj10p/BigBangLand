@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    padding: 0.5em;
+}
+
+#contorno{
+    background-color: #0060DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 3em;
+    font-size: 3em;
+    color: white;
+    border-radius: 100px;
+    margin-top: 1em;
+}
+
+.eventos{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 1.5em;
+}
+
+.evento{
+    height: 30em;
+    width: 20em;
+    background-color: #EBEBEB;
+    border: 1px solid rgb(196, 196, 196);
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden; 
+}
+
+#portada{
+    height: 12em;
+    width: 20em;
+    
+}
+
+#portadaimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#event-title{
+    font-size: 30px;
+}
+
+#subtitle{
+    font-size: 25px;
+    color: blue;
+}
+
+.tiempo{
+    display: flex;
+    font-family: beiruti;
+    justify-content: center;
+    gap: 5px;
+}
+
+.info{
+    margin-top: 20px;
+    font-family: beiruti;
+    display: flex;
+    justify-content: center;
+}
+
+#descripcion{
+    display: flex;
+    font-size: 22px;
+    width: 12.5em;
+}
+
+.subtitles{
+    display: flex;
+    font-size: 30px;
+    width: 38em;
+    margin-top: 1.5em;
+    margin-bottom: 10px;
+}
+
+.especificEvents{
+    font-family: beiruti;
+    display: flex;
+    font-size: 25px;
+    width: 45em;
+    margin-bottom: 10px;
+    margin-top: 1em;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    margin-top: 2em;
+}
