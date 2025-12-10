@@ -11,17 +11,16 @@
     <header>
         <a href="index.html"><img src="assets/logo/large_transparent.png" alt="Header Logo" class="header-logo"></a>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="eventos.html" class="header-link-marked">Eventos</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="selected">Eventos</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="#">Horarios</a></li>
                 <li><a href="atracciones.html">atracciones</a></li>
-                <a href="entradas.html" class="but-entradas">
-                    <img src="assets/img/cupon.png" alt="cupon" class="cupon-nav">
-                    Entradas
-                </a>
-            </ul>
+              <img src="assets/img/cupon.png" alt="cupon" class="cupon-nav">
+              <a href="entradas.html">Entradas</a>
+            </li>
+          </ul>
         </nav>
     </header>
 </head>
@@ -35,52 +34,153 @@
                 </div>
             </div>
             <div class="mainContent">
-                <div class="subtitles">
-                    <p>TODOS LOS EVENTOS:</p>
-                </div>
-                <div class="eventos">
-                    <div class="evento">
-                        <img id="portada" src="assets/img/imagenprueba.png">
-                        <p id="event-title">Especial Halloween</p>
-                        <p id="subtitle">Via Lactea</p>
-                        <div class="tiempo">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>7PM - 8PM</p>
-                        </div>
-                        <div class="info">
-                            <div id="descripcion">
-                                Se hara un espectaculo infantil en la seccion Via Lactea inspirado en Halloween.
-                            </div>
-                        </div>
+                    <div class="subtitles">
+                        <p>TODOS LOS EVENTOS:</p>
                     </div>
+                    <div class="eventos">
 
-                    <div class="evento">
-                        <img id="portada" src="assets/img/imagenprueba.png">
-                        <p id="event-title">Especial Halloween</p>
-                        <p id="subtitle">Andromeda</p>
-                        <div class="tiempo">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>7PM - 8PM</p>
-                        </div>
-                        <div class="info">
-                            <div id="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat, nisl vitae
-                                elementum hendrerit, neque metus vulputate lacus, in blandit mi risus in leo.
+                        <div class="evento">
+                            <img id="portada" src="assets/img/imagenespectaculo.jpg">
+                            <p id="event-title">Espectaculo Nocturno</p>
+                            <p id="subtitle">Andromeda</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>11PM - 12PM</p>
+                            </div>
+                            <div class="dias">
+                                <p>Todas las noches</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Espectaculo nocturno sorpresa al aire libre todos los dias. 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="evento">
-                        <img id="portada" src="assets/img/imagenprueba.png">
-                        <p id="event-title">Especial Halloween</p>
-                        <p id="subtitle">Sistema Solar</p>
-                        <div class="tiempo">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>7PM - 8PM</p>
+
+                        <div class="evento">
+                            <img id="portada" src="assets/img/imagenprueba.jpg">
+                            <p id="event-title">Tour por el parque</p>
+                            <p id="subtitle">Via Lactea</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5PM - 6PM</p>
+                            </div>
+                            <div class="dias">
+                                <p>Todos los Lunes y Miercoles</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Se hara un tur entero de todo el parque cada lunes y miercoles.
+                                </div>
+                            </div>
                         </div>
-                        <div class="info">
-                            <div id="descripcion">
-                                Sed rutrum massa in finibus tincidunt. Nulla a auctor felis, sit amet placerat mauris.
-                                Suspendisse et nulla turpis. Suspendisse ipsum ipsum, suscipit sed tortor in toqui.
+                        
+                        
+                        <div class="evento">
+                            <img id="portada" src="assets/img/planetarioimagen.png">
+                            <p id="event-title">Planetario</p>
+                            <p id="subtitle">Sistema Solar</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>7PM - 8PM</p>
+                            </div>
+                            <div class="dias">
+                                <p>Todos los Viernes</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Simulacion realista del espacio todos los Viernes en el planetario.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="evento">
+                            <img id="portada" src="assets/img/espectaculomagia.jpg">
+                            <p id="event-title">Espectaculo de magia</p>
+                            <p id="subtitle">Sistema Solar</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>10PM - 11PM</p>
+                            </div>
+                            <div class="dias">
+                                <p>Todas las noches</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Espectaculo de magia par todos los publicos al aire libre de forma gratuita.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="evento">
+                            <img id="portada" src="assets/img/competicioninfantil.jpg">
+                            <p id="event-title">Competicion Infantil</p>
+                            <p id="subtitle">Andromeda</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>11AM - 12AM</p>
+                            </div>
+                            <div class="dias">
+                                <p>Todos los martes y jueves</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                   Todos los niños con edades desde 7 a 10 años podran competir en una competicion deportiva por la mañana.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="subtitles">
+                        <p>EVENTOS ESPECIALES:</p>
+                    </div>
+                    <p class="especificEvents">
+                        HALLOWEEN
+                    </p>
+                    <div class="eventos">
+                        <div class="evento">
+                            <div id="portada">
+                                <img id="portadaimg" src="assets/img/calabazaportada.jpg">
+                            </div>
+                            
+                            <p id="event-title">Especial Halloween</p>
+                            <p id="subtitle">Via Lactea</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>7PM - 8PM</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Se hara un espectaculo infantil en la seccion Via Lactea  inspirado en Halloween.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="evento">
+                            <img id="portada" src="assets/img/imagenprueba.png">
+                            <p id="event-title">Especial Halloween</p>
+                            <p id="subtitle">Andromeda</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>7PM - 8PM</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat, nisl vitae elementum hendrerit, neque metus vulputate lacus, in blandit mi risus in leo. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="evento">
+                            <img id="portada" src="assets/img/imagenprueba.png">
+                            <p id="event-title">Especial Halloween</p>
+                            <p id="subtitle">Sistema Solar</p>
+                            <div class="tiempo">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>7PM - 8PM</p>
+                            </div>
+                            <div class="info">
+                                <div id="descripcion">
+                                    Sed rutrum massa in finibus tincidunt. Nulla a auctor felis, sit amet placerat mauris. Suspendisse et nulla turpis. Suspendisse ipsum ipsum, suscipit sed tortor in toqui.
+                                </div>
                             </div>
                         </div>
                     </div>

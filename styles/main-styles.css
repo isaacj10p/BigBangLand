@@ -126,19 +126,34 @@ header nav ul li a {
 }
 
 /* Footer */
-footer {
+.sec-1 {
   display: flex;
   flex-direction: row;
   background-color: var(--main-color);
   padding: 45px 15px;
   display: flex;
+  margin-top: 50px;
   justify-content: space-around;
   align-items: start;
+}
+
+.sec-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-gray);
+  padding: 7px;
+}
+
+.sec-2 h2{
+  color: #4D5E82;
+  font-size: 17px;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .footer-section span {
@@ -149,12 +164,102 @@ footer {
   color: var(--text-gray);
 }
 
-.button{
-  padding: 15px 25px;
-  font-weight: 500;
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social_list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social h2{
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-logo{
+  width: 23px;
+}
+
+/* Hero section */
+  
+.hero-section{
+    background-image: url("/assets/img/fondo principal.jpg");
+    background-repeat: none;
+    background-position: center;
+    max-width: 100%;
+    height: 80vh;
+}
+
+.effect{
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+    padding-top: 50px;
+}
+
+.descuento {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descuento h1{
+  font-size: 60px;
+}
+
+.offer-mark {
+  background-color: yellow;
+  color: black;
   text-align: center;
-  border-radius: 15px;
-  border: none;
+  border-radius: 5px;
+}
+
+.button{
+    padding: 15px 25px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    background-color: var(--main-buttton-color);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.datos{
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.datos h2{
+  padding: 15px;
+  border-bottom: solid 1px #ffffffa3;
   font-size: 25px;
   background-color: var(--main-buttton-color);
   color: #fff;
