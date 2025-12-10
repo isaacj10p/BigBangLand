@@ -1,0 +1,61 @@
+.login-section{
+    background-image: url("/assets/img/fondo principal.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+}
+
+.effect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    gap: 25px;
+}
+
+.login-title h1 {
+    color: black;
+    font-size: 48px;
+}
+
+.login-title p {
+    color: #004aad;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-input {
+    display: flex;
+    gap: auto;
+    color: black;
+    font-size: 20px;
+    background-color: #CACACA;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-input:focus {
+    outline: 2px solid #004aad;
+}
+
+.login-issues-link {
+    width: 100%;
+    text-align: end;
+    font-size: 16px;
+}
