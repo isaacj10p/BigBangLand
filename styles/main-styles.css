@@ -28,11 +28,21 @@
 /* Variables CSS */
 :root {
   --main-color: #004aad;
-  --main-buttton-color: rgb(0, 0, 189);
+  --main-buttton-color: #004aad;
+  --hover-button-color: #0060dd;
   --clear-gray: rgb(202, 202, 202);
   --yellow: #ffff00;
   --text-gray: rgb(209, 209, 209);
   --blue-gray: #8DA8CC;
+}
+
+.white {
+  color: #fff;
+}
+
+.transparent {
+  background-color: transparent;
+  transition: background-color .3s;
 }
 
 /* Reset básico */
@@ -58,11 +68,17 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 15px;
+  padding: 15px 100px;
   background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color .3s;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 36px;
 }
 
 header h1 {
@@ -88,15 +104,20 @@ header nav ul li a {
 .but-entradas{
   background-color: #FFFF00;
   border-radius: 50px;
-  padding: 0 20px;
+  padding: 5px 15px;
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #000;
+  font-size: 24px;
+  margin-block: 6px;
+  transition: all 0.3s;
 }
 
-.but-entradas a{
-  color: #000;
-  margin-block: 6px;
+.but-entradas-checked{
+  background-color: var(--hover-button-color);
+  color: white;
+  transition: all 0.3s;
 }
 
 .cupon-nav{
@@ -105,19 +126,34 @@ header nav ul li a {
 }
 
 /* Footer */
-footer {
+.sec-1 {
   display: flex;
   flex-direction: row;
   background-color: var(--main-color);
   padding: 45px 15px;
   display: flex;
+  margin-top: 50px;
   justify-content: space-around;
   align-items: start;
+}
+
+.sec-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-gray);
+  padding: 7px;
+}
+
+.sec-2 h2{
+  color: #4D5E82;
+  font-size: 17px;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .footer-section span {
@@ -126,6 +162,34 @@ footer {
 
 .footer-section a {
   color: var(--text-gray);
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social_list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social h2{
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-logo{
+  width: 23px;
 }
 
 /* Hero section */
@@ -176,7 +240,6 @@ footer {
     font-size: 25px;
     background-color: var(--main-buttton-color);
     color: #fff;
-    font-family: ;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -198,8 +261,8 @@ footer {
   padding: 15px;
   border-bottom: solid 1px #ffffffa3;
   font-size: 25px;
-}
-
-.datos h2:last-child{
-  border: none;
+  background-color: var(--main-buttton-color);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
 }
